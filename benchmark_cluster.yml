@@ -41,6 +41,3 @@
     - name:
       ansible.builtin.debug:
         msg: '{{ wrk_output.stdout_lines | select("search", "Req/Sec") }}'
-
-
-REPEAT FOR SCALE 2,4,8
